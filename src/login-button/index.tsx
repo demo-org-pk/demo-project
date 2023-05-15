@@ -1,3 +1,4 @@
+```
 import React from 'react';
 
 interface Props {
@@ -7,9 +8,10 @@ interface Props {
 const LoginButton: React.FC<Props> = ({ onClick }) => {
     return (
         <button onClick={onClick} className="login-button">
-            Logim
+            Lorem ipsum
         </button>
     );
 };
 
 export default LoginButton;
+```
