@@ -1,15 +1,16 @@
-import React from 'react';
+import "./styles.css";
+import React from "react";
 
 interface Props {
-    onClick: () => void;
+  onClick: () => void;
 }
 
 const LoginButton: React.FC<Props> = ({ onClick }) => {
-    return (
-        <button onClick={onClick} className="login-button">
-            Logim
-        </button>
-    );
+  return (
+    <button onClick={onClick} className="login-button">
+      Login
+    </button>
+  );
 };
 
 export default LoginButton;
