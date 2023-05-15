@@ -1,15 +1,16 @@
-import React from 'react';
+import "./styles.css";
 
-interface Props {
-    onClick: () => void;
+export { default } from "./loginButton"; 
+
+.login-button {
+  background-color: #00b3b3;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
 }
 
-const LoginButton: React.FC<Props> = ({ onClick }) => {
-    return (
-        <button onClick={onClick} className="login-button">
-            Logim
-        </button>
-    );
-};
-
-export default LoginButton;
+.login-button:hover {
+  background-color: #008080;
+}
