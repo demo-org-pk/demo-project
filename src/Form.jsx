@@ -10,7 +10,7 @@ const Form = () => {
     const error = true;
 
     if (error) {
-      setErrorMessage('error');
+      setErrorMessage('Please fill out all required fields.');
     } else {
       // Submit the form
     }
@@ -21,8 +21,8 @@ const Form = () => {
       <h2>Form</h2>
       <form onSubmit={handleFormSubmit}>
         <div>
-          <label>Email:</label>
-          <input type="email" name="email" />
+          <label htmlFor="email">Email:</label>
+          <input type="email" id="email" name="email" required />
         </div>
         <div>
           <button type="submit">Submit</button>
