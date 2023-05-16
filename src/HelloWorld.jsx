@@ -7,7 +7,7 @@ class HelloWorld extends React.Component {
     }
 
     handleClick = () => {
-        this.setState({ message: 'Button clicked!' });
+        this.setState({ message: 'Hello, World!' });
     }
 
     render() {
