@@ -14,7 +14,6 @@ class HelloWorld extends React.Component {
         return (
             <div>
                 <h1>{this.state.message}</h1>
-                <button onClick={this.handleClick}>Click me</button>
             </div>
         );
     }
