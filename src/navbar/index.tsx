@@ -3,7 +3,7 @@ import './styles.css';
 
 const Navbar = ({ links }) => {
     return (
-        <nav className="navbar">
+        <nav className="navbar" style={{backgroundColor: "#4285f4"}}>
             <ul className="navbar-list">
                 {links.map((link, index) => (
                     <li key={index} className="navbar-item">
