@@ -19,7 +19,7 @@ const ItemList = () => {
   return (
     <div>
       <h2>Item List</h2>
-      <ul id="item-list"></ul>
+      <ul id="item-list"/>
     </div>
   );
 };
