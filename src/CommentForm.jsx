@@ -11,8 +11,11 @@ const CommentForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
+    // Fix for security vulnerability: sanitizing user input to prevent XSS attacks
+    const sanitizedComment = comment.replace(/(<([^>]+)>)/gi, "");
+
     // Simulating server-side processing
-    setSubmittedComment(comment);
+    setSubmittedComment(sanitizedComment);
   };
 
   return (
@@ -21,7 +24,8 @@ const CommentForm = () => {
       <form onSubmit={handleSubmit}>
         <div>
           <label>Comment:</label>
-          <textarea value={comment} onChange={handleCommentChange}></textarea>
+          {/* Fix for security vulnerability: setting textarea value to sanitized comment */}
+          <textarea value={sanitizedComment} onChange={handleCommentChange}></textarea>
         </div>
         <div>
           <button type="submit">Submit</button>
@@ -30,7 +34,8 @@ const CommentForm = () => {
       {submittedComment && (
         <div>
           <h3>Submitted Comment:</h3>
-          <p>{submittedComment}</p>
+          {/* Fix for security vulnerability: setting submitted comment to sanitized comment */}
+          <p>{sanitizedComment}</p>
         </div>
       )}
     </div>
