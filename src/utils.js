@@ -1,8 +1,15 @@
+../../repositories/demo-project/src/utils.js:
+
+```
+const TRIMMED_STRING = 'trimmed_string';
+
 const trim = (str) => {
-    const trimmed_string = str.trim();
-    return trimmed_string;
+    const trimmedString = str.trim();
+    return trimmedString;
 }
 
 module.exports = {
-    trim
+    trim,
+    TRIMMED_STRING
 }
+```
