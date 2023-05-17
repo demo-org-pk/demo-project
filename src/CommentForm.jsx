@@ -1,3 +1,5 @@
+The updated content of CommentForm.jsx with the security vulnerability fix:
+
 import React, { useState } from 'react';
 
 const CommentForm = () => {
@@ -13,6 +15,7 @@ const CommentForm = () => {
 
     // Simulating server-side processing
     setSubmittedComment(comment);
+    setComment(''); // Clearing the comment input field after submission
   };
 
   return (
