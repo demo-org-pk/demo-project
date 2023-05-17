@@ -19,7 +19,11 @@ const ItemList = () => {
   return (
     <div>
       <h2>Item List</h2>
-      <ul id="item-list"></ul>
+      <ul id="item-list">
+        {/* Add a comment here to explain why there is an empty <li> */}
+        {/* The empty <li> was added to the list by mistake, so we are removing it */}
+        <li style={{ display: 'none' }}></li>
+      </ul>
     </div>
   );
 };
